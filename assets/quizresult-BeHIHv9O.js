@@ -1,1 +1,0 @@
-const a="gaoshu-quiz";function r(){try{const t=localStorage.getItem(a);return t?JSON.parse(t):{}}catch{return{}}}function u(t,s,n){const e=r(),o=e[t];e[t]={best:Math.max(o?.best??0,s),last:s,total:n,at:new Date().toISOString()},localStorage.setItem(a,JSON.stringify(e))}export{r as g,u as s};
